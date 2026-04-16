@@ -1,5 +1,42 @@
 # ComfortSense-IoT
 
+# ComfortSense-IoT
+
+### Visión del Proyecto
+
+En muchos espacios de estudio y trabajo, las condiciones ambientales no son adecuadas, lo que afecta la concentración, la productividad y el bienestar de las personas. Factores como la temperatura, la iluminación o la calidad del aire suelen pasar desapercibidos, aunque tienen un impacto directo en el rendimiento diario.
+
+Este proyecto propone el desarrollo de un sistema IoT de bajo costo basado en un ESP32, capaz de monitorear variables ambientales en tiempo real y calcular un índice de confort. La información será enviada a un dashboard accesible, permitiendo a los usuarios tomar decisiones informadas para mejorar su entorno. Está dirigido a estudiantes, oficinas y hogares que buscan optimizar sus condiciones de estudio o trabajo de forma simple y eficiente.
+
+### Descripción General del Sistema
+
+El sistema propuesto por el equipo funciona mediante la captura de variables ambientales utilizando sensores conectados a un microcontrolador ESP32. Estos sensores registran datos como temperatura, humedad y nivel de iluminación del entorno.
+
+El ESP32 procesa esta información y calcula un índice de confort en tiempo real. Posteriormente, los datos son enviados a través de WiFi utilizando el protocolo MQTT hacia un servidor o plataforma de visualización.
+
+Finalmente, un dashboard permite al usuario visualizar las condiciones del ambiente y, en caso necesario, recibir alertas cuando los niveles no sean adecuados para actividades como estudiar o trabajar.
+
+### MVP (Minimum Viable Product)
+
+Las siguientes funcionalidades corresponden a la propuesta planteada para el sistema de monitoreo inteligente de confort ambiental, definiendo los elementos esenciales para validar su funcionamiento en un entorno real.
+
+1. Funcionalidades Must-have
+- **Lectura de temperatura y humedad (DHT22 o BME280):** Permite capturar variables ambientales básicas que influyen directamente en el confort térmico del usuario. Estos datos son fundamentales para el cálculo del índice de confort.
+- **Lectura de nivel de iluminación (BH1750):** Mide la intensidad de luz en el entorno, un factor clave para actividades como estudiar o trabajar, ya que influye en la fatiga visual y la concentración.
+- **Procesamiento de datos en el ESP32:** El microcontrolador se encarga de recibir, interpretar y preparar los datos recolectados por los sensores, actuando como el núcleo del sistema.
+- **Cálculo de un índice de confort en tiempo real:** A partir de las variables medidas, se genera un valor que representa el nivel de confort del ambiente, facilitando la interpretación de los datos por parte del usuario.
+- **Envío de datos mediante WiFi usando MQTT:** Permite transmitir la información recolectada hacia un servidor o plataforma externa de forma eficiente y en tiempo real.
+- **Visualización en un dashboard básico:** Proporciona al usuario una interfaz sencilla donde puede consultar las condiciones ambientales actuales de manera clara.
+
+2. Funcionalidades Nice-to-have
+- **Medición de calidad del aire (MQ-135):** Añade una dimensión adicional al análisis del entorno, permitiendo detectar contaminantes o condiciones poco saludables en el aire.
+- **Generación de alertas:** Notifica al usuario cuando las condiciones ambientales no son adecuadas, permitiendo actuar de manera oportuna.
+- **Almacenamiento de datos históricos:** Guarda registros de las mediciones para analizar tendencias y cambios en el tiempo.
+- **Visualización avanzada (gráficas y tendencias):** Mejora la experiencia del usuario mediante representaciones visuales más completas e intuitivas.
+- **Generación de recomendaciones:** Sugiere acciones al usuario (como ventilar el espacio o ajustar la iluminación) basadas en los datos recolectados.
+
+Este conjunto de funcionalidades permite validar la propuesta del sistema de forma práctica, asegurando una base sólida sobre la cual se pueden implementar mejoras futuras.
+
 ## Arquitectura técnica
 El sistema estará compuesto por sensores ambientales conectados a un ESP32, el cual se encargará de leer las variables del entorno, procesarlas y enviarlas por WiFi mediante el protocolo MQTT. Los datos serán recibidos por un dashboard web, donde se visualizarán en tiempo real para evaluar el nivel de confort ambiental del espacio monitoreado.
 
