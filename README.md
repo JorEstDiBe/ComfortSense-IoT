@@ -127,3 +127,75 @@ Como evidencia del Spike se espera incluir:
 - Fragmentos de código o enlace al código implementado
 - Registro de pruebas realizadas
 - Conclusiones sobre la viabilidad técnica y posibles ajustes a la arquitectura
+
+### Cronograma
+
+El proyecto se desarrollará en sprints de una semana, agrupados en releases de dos semanas. Cada release tendrá un entregable funcional o una validación clara del avance del sistema.
+
+#### Release 1: Fundamentos y Viabilidad (Semanas 1 y 2)
+Objetivo: validar la arquitectura base del sistema y reducir la mayor incertidumbre técnica.
+
+**Sprint 1**
+- Configuración inicial del repositorio y entorno de trabajo
+- Configuración del ESP32
+- Pruebas de lectura de sensores
+- Conexión a red WiFi
+- Inicio del Spike arquitectónico
+
+**Sprint 2**
+- Publicación de datos por MQTT
+- Recepción de datos en dashboard o cliente MQTT
+- Documentación del Spike
+- Ajustes iniciales a la arquitectura según resultados
+
+**Entregable Release 1**
+- README inicial completo
+- Backlog priorizado
+- Spike ejecutado y documentado
+- Confirmación de viabilidad técnica del proyecto
+
+#### Release 2: Implementación del MVP (Semanas 3 y 4)
+Objetivo: construir una primera versión funcional del sistema.
+
+**Sprint 3**
+- Integración de sensores principales del MVP
+- Cálculo inicial del índice de confort
+- Envío estructurado de datos
+
+**Sprint 4**
+- Dashboard funcional con visualización en tiempo real
+- Visualización de variables ambientales
+- Visualización del índice de confort
+
+**Entregable Release 2**
+- MVP funcional con captura, envío y visualización de datos
+
+#### Release 3: Mejoras y Funcionalidades Adicionales (Semanas 5 y 6)
+Objetivo: ampliar el sistema con mejoras no críticas y optimizar la experiencia de uso.
+
+**Sprint 5**
+- Integración de sensor adicional (por ejemplo, calidad del aire)
+- Mejora en la lógica del índice de confort
+
+**Sprint 6**
+- Implementación de alertas
+- Ajustes de estabilidad y presentación del dashboard
+
+**Entregable Release 3**
+- Sistema mejorado con funcionalidades adicionales y mayor valor de uso
+
+#### Release 4: Pulido y Entrega Final (Semanas 7 y 8)
+Objetivo: estabilizar el proyecto y preparar la entrega final.
+
+**Sprint 7**
+- Corrección de errores
+- Validación integral del sistema
+- Revisión de documentación
+
+**Sprint 8**
+- Feature freeze
+- Preparación de demostración final
+- Ajustes de presentación y cierre del proyecto
+
+**Entregable Release 4**
+- Proyecto final funcional, estable y documentado
