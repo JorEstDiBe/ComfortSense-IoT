@@ -1,7 +1,5 @@
 # ComfortSense-IoT
 
-# ComfortSense-IoT
-
 ### Visión del Proyecto
 
 En muchos espacios de estudio y trabajo, las condiciones ambientales no son adecuadas, lo que afecta la concentración, la productividad y el bienestar de las personas. Factores como la temperatura, la iluminación o la calidad del aire suelen pasar desapercibidos, aunque tienen un impacto directo en el rendimiento diario.
