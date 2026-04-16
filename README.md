@@ -75,3 +75,11 @@ El proyecto utilizará un ESP32 como dispositivo principal, por lo que se deben 
 
 **Total estimado:** entre 75,000 y 150,000 COP, dependiendo de los sensores seleccionados.
 
+## Backlog inicial y organización ágil
+
+El backlog inicial del proyecto fue organizado en un tablero de GitHub Project, donde las tareas fueron priorizadas y clasificadas en:
+- **Must-have:** funcionalidades mínimas necesarias para el MVP
+- **Nice-to-have:** mejoras opcionales
+- **Spike:** tarea de investigación técnica para reducir riesgo
+
+El repositorio contiene el backlog inicial y la planeación base del proyecto.
