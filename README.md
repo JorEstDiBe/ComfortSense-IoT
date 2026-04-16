@@ -29,6 +29,10 @@ Los sensores principales propuestos son:
 Flujo general del sistema:  
 Sensores → ESP32 → WiFi/MQTT → Dashboard web
 
+## Diagrama de bloques
+
+![Diagrama de arquitectura](diagrama-arquitectura.png)
+
 ## 4. Restricciones y limitaciones
 
 El proyecto utilizará un ESP32 como dispositivo principal, por lo que se deben tener en cuenta algunas restricciones de hardware y operación:
