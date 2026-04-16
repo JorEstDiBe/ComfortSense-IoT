@@ -83,3 +83,47 @@ El backlog inicial del proyecto fue organizado en un tablero de GitHub Project, 
 - **Spike:** tarea de investigación técnica para reducir riesgo
 
 El repositorio contiene el backlog inicial y la planeación base del proyecto.
+
+## Planeación y Ejecución Ágil
+
+### Spike Arquitectónico (Gestión de Riesgos)
+
+El principal riesgo técnico del proyecto es validar la comunicación completa entre el dispositivo IoT y la visualización de datos en tiempo real. Aunque el uso del ESP32, los sensores ambientales y MQTT está ampliamente documentado por separado, la mayor incertidumbre está en comprobar que todo el flujo funcione de manera integrada y estable: lectura del sensor, procesamiento en el ESP32, envío por WiFi mediante MQTT y recepción correcta en un dashboard.
+
+Por esta razón, durante el primer release se desarrollará un **Spike Arquitectónico** enfocado exclusivamente en validar la viabilidad técnica del sistema de extremo a extremo.
+
+#### Riesgo principal identificado
+La integración **ESP32 → WiFi/MQTT → Dashboard** puede presentar fallos de conexión, errores en el formato de los mensajes, latencia, pérdida de datos o problemas de compatibilidad entre librerías, broker y dashboard.
+
+#### Objetivo del Spike
+Comprobar que el sistema puede capturar al menos una variable ambiental desde un sensor conectado al ESP32 y transmitirla correctamente por MQTT hacia un dashboard o herramienta de monitoreo en tiempo real.
+
+#### Alcance del Spike
+El Spike incluirá las siguientes pruebas mínimas:
+
+- Configuración del entorno de desarrollo del ESP32
+- Lectura de al menos un sensor ambiental (temperatura/humedad o luz)
+- Conexión del ESP32 a una red WiFi
+- Publicación de datos en un tópico MQTT
+- Recepción y visualización de esos datos en un dashboard o cliente MQTT
+- Validación del formato del mensaje enviado
+
+#### Resultado esperado
+Al finalizar el Spike, el equipo debe tener evidencia de que la arquitectura base del proyecto es viable. Esto permitirá reducir el riesgo técnico antes de avanzar al desarrollo completo del MVP.
+
+#### Criterios de éxito del Spike
+Se considerará exitoso si se cumple lo siguiente:
+
+1. El ESP32 logra conectarse correctamente a la red WiFi.
+2. El ESP32 lee datos válidos desde al menos un sensor.
+3. Los datos se publican correctamente en un tópico MQTT.
+4. El dashboard o cliente MQTT recibe y muestra esos datos.
+5. El flujo puede repetirse de forma estable durante varias pruebas consecutivas.
+
+#### Evidencia esperada
+Como evidencia del Spike se espera incluir:
+
+- Capturas de la visualización de datos en el dashboard o cliente MQTT
+- Fragmentos de código o enlace al código implementado
+- Registro de pruebas realizadas
+- Conclusiones sobre la viabilidad técnica y posibles ajustes a la arquitectura
