@@ -1,4 +1,7 @@
 # ComfortSense-IoT
+## Universidad de la Sabana - Internet de las cosas (2026-1) - Definición Proyecto Final
+## Jorge Esteban Diaz Bernal - Carlos Augusto Sanchez Lombana - Laura Camila Rodriguez Leon
+
 
 ## 1. Visión del Proyecto
 
