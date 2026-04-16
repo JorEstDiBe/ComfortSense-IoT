@@ -128,7 +128,7 @@ Como evidencia del Spike se espera incluir:
 - Registro de pruebas realizadas
 - Conclusiones sobre la viabilidad técnica y posibles ajustes a la arquitectura
 
-### Cronograma
+## Cronograma
 
 El proyecto se desarrollará en sprints de una semana, agrupados en releases de dos semanas. Cada release tendrá un entregable funcional o una validación clara del avance del sistema.
 
