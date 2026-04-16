@@ -84,8 +84,6 @@ El backlog inicial del proyecto fue organizado en un tablero de GitHub Project, 
 
 El repositorio contiene el backlog inicial y la planeación base del proyecto.
 
-## Planeación y Ejecución Ágil
-
 ### Spike Arquitectónico (Gestión de Riesgos)
 
 El principal riesgo técnico del proyecto es validar la comunicación completa entre el dispositivo IoT y la visualización de datos en tiempo real. Aunque el uso del ESP32, los sensores ambientales y MQTT está ampliamente documentado por separado, la mayor incertidumbre está en comprobar que todo el flujo funcione de manera integrada y estable: lectura del sensor, procesamiento en el ESP32, envío por WiFi mediante MQTT y recepción correcta en un dashboard.
